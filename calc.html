@@ -1,31 +1,37 @@
+<!DOCTYPE html>
+<title>Pocket Calculator</title>
 <h1>Pocket Calculator</h1>
 
-<div class="calculator">
+<head>
+  <link rel="stylesheet" type="text/css" href="./calc.css"/>
+  <script type="text/javascript" src="./calc.js"></script>
+  <meta charset="UTF-8"/>
+</head>
+<body>
 
-  <input type="text" class="calculator-screen" value="" disabled />
+    <button class="gray" class="all-clear" all-clear">AC</button>
+    <button class="gray" onclick = "negate">+/-</button>
+    <button class="gray" onclick = "percent">%</button>
+    <button class="oranum" onclick = "divide" class="op" /">&divide;</button>
 
-  <div class="calculator-keys">
-    <button id="num" class="op" value="+">+</button>
-    <button id="num" class="op" value="-">-</button>
-    <button id="num" class="op" value="*">&times;</button>
-    <button id="num" class="op" value="/">&divide;</button>
+    <button class="num" onclick = "seven">7</button>
+    <button class="num" onclick = "eight">8</button>
+    <button class="num" onclick = "nine">9</button>
+    <button class="oranum" onclick = "multiply" class="op">&times;</button>
 
-    <button id="num" value="7">7</button>
-    <button id="num" value="8">8</button>
-    <button id="num" value="9">9</button>
+    <button class="num" onclick = "four">4</button>
+    <button class="num" onclick = "five">5</button>
+    <button class="num" onclick = "six">6</button>
+    <button class="oranum" onclick = "subtract" class="op">-</button>
 
-    <button id="num" value="4">4</button>
-    <button id="num" value="5">5</button>
-    <button id="num" value="6">6</button>
+    <button class="num" onclick = "one">1</button>
+    <button class="num" onclick = "two">2</button>
+    <button class="num" onclick = "three">3</button>
+    <button class="oranum" onclick = "add" class="op">+</button>
 
-    <button id="num" value="1">1</button>
-    <button id="num" value="2">2</button>
-    <button id="num" value="3">3</button>
+    <button id="zero" onclick = "zero" 0">0</button>
+    <button class="num" onclick = "decimal" class="decimal">.</button>
+    <button class="oranum" onclick = "equal" class="equals">=</button>
 
-    <button id="num" value="0">0</button>
-    <button id="num" class="decimal" value=".">.</button>
-    <button id="num" class="all-clear" value="all-clear">AC</button>
-
-    <button id="num" class="equal-sign op" value="=">=</button>
-  </div>
-</div>
+</body>
+</html>
