@@ -3,25 +3,36 @@ html {
   box-sizing: border-box;
 }
 
+button{
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+}
+
 .num {
   background-color: #fff;
   border: 1px solid #c4c4c4;
   font-size: 2rem;
-  color: #333;
+  color: White;
+  background-color: Gray;
+
 }
 
 .oranum {
   background-color: #fff;
   border: 1px solid #c4c4c4;
   font-size: 2rem;
-  color: #333;
+  background-color: Orange;
+  color: White;
 }
 
 .gray {
   background-color: #fff;
   border: 1px solid #c4c4c4;
   font-size: 2rem;
-  color: #333;
+  background-color: LightGray;
+  color: Black;
+
 }
 
 #zero {
@@ -29,40 +40,16 @@ html {
   background-color: #fff;
   border: 1px solid #c4c4c4;
   font-size: 2rem;
-  color: #333;
-}
-num:hover {
-  background-color: #eaeaea;
+  color: White;
+  background-color: Gray;
 }
 
 .op {
   color: #337cac;
 }
 
-.all-clear {
-  background-color: #f0595f;
-  border-color: #b0353a;
-  color: #fff;
-}
-
-.all-clear:hover {
-  background-color: #f17377;
-}
-
-.equals {
-  background-color: #2e86c0;
-  border-color: #337cac;
-  color: #fff;
-  height: 100%;
-}
-
-.equals:hover {
-  background-color: #4e9ed4;
-}
-
-td {
-  height: 100%;
-  width: 100%;
-  column-width: 100px;
-  position: absolute;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows:minmax(100px, auto);
 }
