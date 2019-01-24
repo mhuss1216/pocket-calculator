@@ -140,5 +140,3 @@ function equal(){
 calcAnswer = eval(expression.join(''))
 document.getElementById("answer").innerHTML = calcAnswer;
 }
-
-  
