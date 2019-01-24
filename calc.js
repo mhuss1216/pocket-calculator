@@ -127,5 +127,5 @@ document.getElementById("answer").innerHTML = calcAnswer;
       let exponent=finalExpression.toString().length-1;
       document.getElementById('answer').innerHTML=calcAnswer/(10**(exponent))+'e'+exponent;
     }
-}
+  }
 }
