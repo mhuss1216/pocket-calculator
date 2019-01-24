@@ -10,7 +10,6 @@ if(num === '*' || num === '/' || num === '+'|| num === '-'){
     opInserted = true;
     console.log("raw array" , expressionArray);}
 }
-}
 
     if(Number(document.answer.display.value.length) <= 10){
     document.answer.display.value = document.answer.display.value
