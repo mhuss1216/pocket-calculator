@@ -119,4 +119,12 @@ function percent(){
 function equal(){
 calcAnswer = eval(expression.join(''))
 document.getElementById("answer").innerHTML = calcAnswer;
+   if(math== '='){
+    if (calcAnswer==Infinity){
+      document.getElementById('answer').innerHTML="Error";
+    }
+    else if(finalExpression>999999999){
+      let exponent=finalExpression.toString().length-1;
+      document.getElementById('answer').innerHTML=calcAnswer/(10**(exponent))+'e'+exponent;
+    }
 }
