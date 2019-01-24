@@ -104,11 +104,9 @@ function percent(){
   equal();
 }
 
-function numberWithCommas(x) {
-    var parts = x.toString().split(".");
-    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    return parts.join(".");
-}
+var n = 34523453.345
+n.toLocaleString()
+"34,523,453.345"
 
 function equal(){
 calcAnswer = eval(expression.join(''))
