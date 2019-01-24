@@ -8,8 +8,7 @@ if(num === '*' || num === '/' || num === '+'|| num === '-'){
     expressionArray.pop();
     expressionArray.push(num);
     opInserted = true;
-    console.log("raw array" , expressionArray);
-  }
+    console.log("raw array" , expressionArray);}
 }
 
     if(Number(document.answer.display.value.length) <= 10){
