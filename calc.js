@@ -27,6 +27,12 @@ if(num === '*' || num === '/' || num === '+'|| num === '-'){
     document.getElementById("decimal").disabled = true;
     document.getElementById("pi").disabled = true;
   }
+  
+   if(decimalNumInsert == false){
+ let commaInput = Number(document.answer.display.value.split(",").join("")).toLocaleString();
+ document.answer.display.value = commaInput;
+  }
+  
 function pi(){
   document.getElementById("answer").textContent += Math.PI;
   expression.push(Math.PI);
