@@ -43,7 +43,6 @@ function zero(){
   expression.push("0");
 }
 
-
 function one(){
   document.getElementById("answer").textContent += "1";
   expression.push("1");
@@ -134,7 +133,6 @@ function percent(){
   expression.push("/", "1", "0", "0");
   equal();
 }
-
 
 function equal(){
 calcAnswer = eval(expression.join(''))
