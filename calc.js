@@ -1,6 +1,7 @@
 let answer;
 let expression = [];
 let calcAnswer;
+return Number.parseFloat(x).toFixed(9);
 
 function pi(){
   document.getElementById("answer").textContent += Math.PI;
@@ -104,9 +105,6 @@ function percent(){
   equal();
 }
 
-var n = 34523453.345
-n.toLocaleString()
-"34,523,453.345"
 
 function equal(){
 calcAnswer = eval(expression.join(''))
