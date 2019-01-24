@@ -11,8 +11,8 @@ if(num === '*' || num === '/' || num === '+'|| num === '-'){
     console.log("raw array" , expressionArray);
   }
 
-    if(Number(document.calc.display.value.length) <= 10){
-    document.calc.display.value = document.calc.display.value
+    if(Number(document.answer.display.value.length) <= 10){
+    document.answer.display.value = document.answer.display.value
   }else{
     document.getElementById("zero").disabled = true;
     document.getElementById("one").disabled = true;
