@@ -1,36 +1,18 @@
 let answer;
 let expression = [];
 let calcAnswer;
+var notNumber=false;
+var zeroDec=false;
 
-if(answer === '*' || answer === '/' || answer === '+'|| answer === '-'){
-  console.log(negated)
-  if(expressionArray[expressionArray.length - 1] == '+' || expressionArray[expressionArray.length - 1] == '-' || expressionArray[expressionArray.length -1 == '*'] || expressionArray[expressionArray.length - 1] == '/'){
-    expressionArray.pop();
-    expressionArray.push(num);
-    opInserted = true;
-    console.log("raw array" , expressionArray);}
-}
-
-    if(Number(document.answer.display.value.length) <= 10){
-    document.answer.display.value = document.answer.display.value
-  }else{
-    document.getElementById("zero").disabled = true;
-    document.getElementById("one").disabled = true;
-    document.getElementById("two").disabled = true;
-    document.getElementById("three").disabled = true;
-    document.getElementById("four").disabled = true;
-    document.getElementById("five").disabled = true;
-    document.getElementById("six").disabled = true;
-    document.getElementById("seven").disabled = true;
-    document.getElementById("eight").disabled = true;
-    document.getElementById("nine").disabled = true;
-    document.getElementById("decimal").disabled = true;
-    document.getElementById("pi").disabled = true;
-  }
-  
-   if(decimalNumInsert == false){
- let commaInput = Number(document.answer.display.value.split(",").join("")).toLocaleString();
- document.answer.display.value = commaInput;
+function numbers(math){
+  if(zeroDec==true){
+    let r=expression.split('')
+    let q=answer.split('')
+    r.pop();
+    q.pop();
+    expression=r.join('');
+    answer=q.join('')
+    zeroDec=false;
   }
   
 function pi(){
