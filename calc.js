@@ -2,7 +2,7 @@ let answer;
 let expression = [];
 let calcAnswer;
 
-if(num === '*' || num === '/' || num === '+'|| num === '-'){
+if(answer === '*' || answer === '/' || answer === '+'|| answer === '-'){
   console.log(negated)
   if(expressionArray[expressionArray.length - 1] == '+' || expressionArray[expressionArray.length - 1] == '-' || expressionArray[expressionArray.length -1 == '*'] || expressionArray[expressionArray.length - 1] == '/'){
     expressionArray.pop();
