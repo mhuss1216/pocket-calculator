@@ -1,8 +1,32 @@
 let answer;
 let expression = [];
 let calcAnswer;
-return Number.parseFloat(x).toFixed(9);
 
+if(num === '*' || num === '/' || num === '+'|| num === '-'){
+  console.log(negated)
+  if(expressionArray[expressionArray.length - 1] == '+' || expressionArray[expressionArray.length - 1] == '-' || expressionArray[expressionArray.length -1 == '*'] || expressionArray[expressionArray.length - 1] == '/'){
+    expressionArray.pop();
+    expressionArray.push(num);
+    opInserted = true;
+    console.log("raw array" , expressionArray);
+  }
+
+    if(Number(document.calc.display.value.length) <= 10){
+    document.calc.display.value = document.calc.display.value
+  }else{
+    document.getElementById("zero").disabled = true;
+    document.getElementById("one").disabled = true;
+    document.getElementById("two").disabled = true;
+    document.getElementById("three").disabled = true;
+    document.getElementById("four").disabled = true;
+    document.getElementById("five").disabled = true;
+    document.getElementById("six").disabled = true;
+    document.getElementById("seven").disabled = true;
+    document.getElementById("eight").disabled = true;
+    document.getElementById("nine").disabled = true;
+    document.getElementById("decimal").disabled = true;
+    document.getElementById("pi").disabled = true;
+  }
 function pi(){
   document.getElementById("answer").textContent += Math.PI;
   expression.push(Math.PI);
